@@ -128,10 +128,11 @@ STATICFILES_DIRS=[
 ]
 
 # STMP配置
+EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
 EMAIL_HOST = 'smtp.qq.com'
+EMAIL_PORT = 465
 EMAIL_HOST_USER = '736118244@qq.com'
 EMAIL_HOST_PASSWORD = 'gjbnfxmqdjwsbcab'
-EMAIL_PORT = 465
 #EMAIL_USE_TLS = True
 EMAIL_USE_SSL= True
 

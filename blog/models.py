@@ -32,7 +32,8 @@ class Post(models.Model):
 
     objects = models.Manager()
     published = PublishedManager()
-    tags = TaggableManager()
+    # tags = TaggableManager()
+
 
     def get_absolute_url(self):
         return reverse('blog:post_detail',
@@ -62,4 +63,5 @@ class Comment(models.Model):
 
     def __str__(self):
         return 'Comment by {} on {}'.format(self.name, self.post)
+
 

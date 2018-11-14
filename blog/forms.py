@@ -15,6 +15,7 @@ class EmailPostForm(forms.Form):
     comments = forms.CharField(required=False, widget=forms.Textarea)
 
 
+# 通过model模型创建表单
 class CommentForm(forms.ModelForm):
     class Meta:
         model= Comment

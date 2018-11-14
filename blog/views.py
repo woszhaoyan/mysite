@@ -41,6 +41,7 @@ def post_share(request, post_id):
     sent = False
 
     if request.method == 'POST':
+        # form was submitted
         form = EmailPostForm(request.POST)
         if form.is_valid():
             cd = form.cleaned_data
